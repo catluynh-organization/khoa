@@ -33,7 +33,7 @@ public class KhoaRestController {
 	}
 
 	@GetMapping("/welcome")
-	public String welcome(@Value("${hello}") String welcome){
+	public String welcome(@Value("${welcome}") String welcome){
 		return welcome;
 	}
 
