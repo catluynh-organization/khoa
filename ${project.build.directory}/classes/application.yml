@@ -1,0 +1,16 @@
+server:
+   port: 8083
+spring:
+   datasource:
+       url: jdbc:sqlserver://localhost:1433;databaseName=khoa
+       username: sa
+       password: sapassword
+
+   application:
+       name: department-service
+
+   config:
+       import: "optional:configserver:"
+   cloud:
+       config:
+          uri: http://localhost:8888
